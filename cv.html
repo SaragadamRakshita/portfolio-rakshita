@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Saragadam Rakshita - CV / Resume</title>
+    <meta name="description" content="Saragadam Rakshita - CV and Professional Resume">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;850&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'researcher': ['Researcher', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white !important;
+                color: black !important;
+                font-size: 11pt !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-bg-white {
+                background-color: white !important;
+                border-color: #ddd !important;
+            }
+            .print-text-black {
+                color: black !important;
+            }
+            .print-shadow-none {
+                box-shadow: none !important;
+            }
+            .print-padding-none {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .cv-container {
+                max-width: 100% !important;
+                width: 100% !important;
+                border: none !important;
+                background: white !important;
+                padding: 0 !important;
+            }
+            a {
+                text-decoration: none !important;
+                color: black !important;
+            }
+            .badge {
+                border: 1px solid #000 !important;
+                background: transparent !important;
+                color: #000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#1D1D22] min-h-screen text-white font-poppins antialiased pb-20">
+
+    <!-- Top Navigation Buttons -->
+    <div class="fixed top-6 left-6 z-50 flex gap-4 no-print">
+        <a href="index.html" class="group relative overflow-hidden border-[1px] border-[#E06031] text-[#E06031] hover:bg-[#E06031] transition-all duration-300 font-researcher tracking-wide whitespace-nowrap inline-flex items-center justify-center w-[180px] h-[40px] bg-[#111]">
+            <span class="transform transition-all duration-300 group-hover:opacity-0">Return Back</span>
+            <i class="fas fa-arrow-left text-xl absolute transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-white transition-all duration-300"></i>
+        </a>
+        <button onclick="window.print()" class="group relative overflow-hidden bg-[#E06031] border-[1px] border-[#E06031] text-white hover:bg-transparent hover:text-[#E06031] transition-all duration-300 font-researcher tracking-wide whitespace-nowrap inline-flex items-center justify-center w-[180px] h-[40px]">
+            <span class="transform transition-all duration-300 group-hover:opacity-0">Print / PDF</span>
+            <i class="fas fa-print text-xl absolute transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"></i>
+        </button>
+    </div>
+
+    <!-- CV Main Section -->
+    <section class="pt-24 px-4 flex items-center justify-center print-padding-none">
+        <div class="cv-container w-full max-w-5xl bg-[#1A1A1A] p-8 md:p-12 rounded-2xl shadow-2xl border border-[#333] print-bg-white print-text-black print-shadow-none print-padding-none">
+            
+            <!-- CV Header -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-[#E06031]/30 pb-8 mb-8 print-bg-white print-text-black">
+                <div>
+                    <h1 class="text-4xl font-extrabold text-white font-researcher tracking-wide print-text-black">SARAGADAM RAKSHITA</h1>
+                    <p class="text-[#E06031] text-lg font-semibold mt-1 tracking-wider print-text-black uppercase">Computer Science Student & Graphic Designer</p>
+                </div>
+                <div class="mt-4 md:mt-0 space-y-2 text-sm text-gray-300 print-text-black">
+                    <p class="flex items-center gap-2">
+                        <i class="fas fa-envelope text-[#E06031] w-4 print-text-black"></i> 
+                        <a href="mailto:sardagamrakshita2802@gmail.com" class="hover:text-[#E06031] transition-colors">sardagamrakshita2802@gmail.com</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fas fa-phone text-[#E06031] w-4 print-text-black"></i> 
+                        <a href="tel:+919337243218" class="hover:text-[#E06031] transition-colors">+91 9337243218</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-[#E06031] w-4 print-text-black"></i> Visakhapatnam, AP, India
+                    </p>
+                </div>
+            </div>
+
+            <!-- Two-Column Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Left Column (Bio, Skills, Languages, Certifications) -->
+                <div class="space-y-8 lg:col-span-1 border-r border-[#333]/40 pr-0 lg:pr-8 print-bg-white print-text-black print-shadow-none">
+                    
+                    <!-- Bio Summary -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-3 pb-1 border-b border-[#333] print-text-black">About Me</h3>
+                        <p class="text-gray-300 text-xs leading-relaxed print-text-black">
+                            B.Tech CSE student passionate about AI/ML, Graphic design, blending Tech-design, and creative problem solving. Enthusiastic learner exploring technology through projects, hackathons, and hands-on experience.
+                        </p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-4 pb-1 border-b border-[#333] print-text-black">Tech Skills</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-gray-400 text-xs font-semibold uppercase tracking-wider block mb-1">Languages</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Python</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Java</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">C</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">SQL</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="text-gray-400 text-xs font-semibold uppercase tracking-wider block mb-1">AI & Data</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Machine Learning</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">AI</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Computer Vision</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Data Analysis</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="text-gray-400 text-xs font-semibold uppercase tracking-wider block mb-1">Tools & Web</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Flutter</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Firebase</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Git/GitHub</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">TensorFlow</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="text-gray-400 text-xs font-semibold uppercase tracking-wider block mb-1">IoT & Embedded</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">IoT Development</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Embedded Systems</span>
+                                    <span class="badge bg-[#222] text-white text-[10px] px-2 py-0.5 rounded border border-[#333] print-text-black">Sensors</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spoken Languages -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-3 pb-1 border-b border-[#333] print-text-black">Languages</h3>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="text-gray-300 print-text-black">English, Hindi, Odia, Telugu</span>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-3 pb-1 border-b border-[#333] print-text-black">Certifications</h3>
+                        <ul class="space-y-2 text-xs text-gray-300 list-disc pl-4 print-text-black">
+                            <li>Fundamentals of Machine Learning and AI (AWS)</li>
+                            <li>AI Ready Internship (APSCHE NASSCOM Future Skills Prime)</li>
+                            <li>Graphic Design Internship (Oasis Infobyte AICTE)</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Right Column (Education, Experience, Projects, Achievements) -->
+                <div class="space-y-8 lg:col-span-2">
+                    
+                    <!-- Education -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-4 pb-1 border-b border-[#333] print-text-black">Education</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-start text-sm font-semibold">
+                                    <h4 class="text-white print-text-black">Andhra University</h4>
+                                    <span class="text-[#E06031] print-text-black text-xs font-bold">2023 - 2027</span>
+                                </div>
+                                <p class="text-gray-300 text-xs print-text-black mt-0.5">B.Tech in Computer Science and Engineering</p>
+                                <span class="text-gray-400 text-xs print-text-black block">CGPA: 8.23/10</span>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between items-start text-sm font-semibold">
+                                    <h4 class="text-white print-text-black">Kendriya Vidyalaya</h4>
+                                    <span class="text-[#E06031] print-text-black text-xs font-bold">2021 - 2023</span>
+                                </div>
+                                <p class="text-gray-300 text-xs print-text-black mt-0.5">Senior Secondary Education (CBSE)</p>
+                                <span class="text-gray-400 text-xs print-text-black block">CGPA: 8.00/10</span>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between items-start text-sm font-semibold">
+                                    <h4 class="text-white print-text-black">Carmel School</h4>
+                                    <span class="text-[#E06031] print-text-black text-xs font-bold">2009 - 2020</span>
+                                </div>
+                                <p class="text-gray-300 text-xs print-text-black mt-0.5">Secondary Education (ICSE)</p>
+                                <span class="text-gray-400 text-xs print-text-black block">CGPA: 8.26/10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-4 pb-1 border-b border-[#333] print-text-black">Experience</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-start text-sm font-semibold">
+                                    <h4 class="text-white print-text-black">Graphic Designer</h4>
+                                    <span class="text-[#E06031] print-text-black text-xs font-bold">Freelance</span>
+                                </div>
+                                <p class="text-gray-300 text-xs font-medium print-text-black">Eshanvi Organics LLP</p>
+                                <p class="text-gray-400 text-[11px] leading-relaxed mt-1 print-text-black">
+                                    Created visual assets, marketing campaigns, and packaging design graphics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-4 pb-1 border-b border-[#333] print-text-black">Key Projects</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-white text-sm font-bold print-text-black">CareerCompass AI</h4>
+                                <p class="text-gray-400 text-[10px] print-text-black font-semibold uppercase">Python, PostgreSQL, Recommendation System</p>
+                                <p class="text-gray-300 text-xs mt-1 print-text-black">
+                                    AI-powered platform that analyzes LinkedIn profiles to map skill gaps and recommend roadmap directions. Built using database schema normalization with 10+ tables.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-white text-sm font-bold print-text-black">AquaSentinel</h4>
+                                <p class="text-gray-400 text-[10px] print-text-black font-semibold uppercase">Computer Vision, Embedded Systems, AI/ML</p>
+                                <p class="text-gray-300 text-xs mt-1 print-text-black">
+                                    Intelligent real-time drowning prevention monitor achieving 94% accuracy, reducing emergency response delays by 40% using edge computer vision cameras.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-white text-sm font-bold print-text-black">Swachh Netra</h4>
+                                <p class="text-gray-400 text-[10px] print-text-black font-semibold uppercase">IoT, Sensor Integration, Embedded Automation</p>
+                                <p class="text-gray-300 text-xs mt-1 print-text-black">
+                                    Smart bin municipality waste monitoring system improving garbage collection productivity by 50% using automated alerts.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-white text-sm font-bold print-text-black">NexoTrack</h4>
+                                <p class="text-gray-400 text-[10px] print-text-black font-semibold uppercase">Flutter, Firebase, GPS, AI/ML</p>
+                                <p class="text-gray-300 text-xs mt-1 print-text-black">
+                                    Mobile noise pollution decibel tracking application visualising real-time noise heatmaps with 92% classification accuracy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Extracurriculars -->
+                    <div>
+                        <h3 class="text-[#E06031] text-lg font-bold uppercase tracking-wider mb-4 pb-1 border-b border-[#333] print-text-black">Achievements & Club Involvements</h3>
+                        <ul class="space-y-2 text-xs text-gray-300 list-disc pl-4 print-text-black">
+                            <li><strong>3rd Prize Winner</strong> at HackAP Hackathon 2025.</li>
+                            <li><strong>Top 10 Finalist</strong> in Tribal Hackathon 2023 & Codeiam Spark National Hackathon 2024.</li>
+                            <li>Member of <strong>Google Developer Groups On Campus (GDGOC)</strong> (Firebase, Graphic Design, DSA, Game Dev).</li>
+                            <li>Member of <strong>Codeiam Club</strong> and <strong>Vedic Science and Cultural Club</strong>.</li>
+                            <li>Olympiad Exams high school winner; recognized for academic/sports excellence.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-500 text-xs no-print">
+        <p>&copy; 2026 Saragadam Rakshita. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-rakshita",
+  "version": "1.0.0",
+  "description": "Developer Portfolio for Saragadam Rakshita",
+  "scripts": {
+    "dev": "http-server -p 8080 -c-1",
+    "build": "echo 'No build step required for static site'"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
