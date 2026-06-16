@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             const awardsHTML = awards.map(award => {
                 return `
-                <div class="bg-[#252525] rounded-xl overflow-hidden border border-[#333] hover:border-[#E06031]/50 transform hover:-translate-y-1 transition duration-300 flex flex-col h-full">
+                <div class="glow-card rounded-xl overflow-hidden flex flex-col h-full">
                     <div class="h-44 overflow-hidden relative">
-                        <img src="${award.image}" alt="${award.alt}" class="w-full h-full object-cover" onerror="this.src='image/ideathon.jpg'">
+                        <img src="${award.image}" alt="${award.alt}" class="w-full h-full object-cover" onerror="this.src='image/ideathon.jpg'" decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#252525] to-transparent opacity-20"></div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-[#E06031] font-poppins font-bold text-lg mb-2 tracking-wide">${award.title}</h3>
+                        <h3 class="text-[#F43F5E] font-poppins font-bold text-lg mb-2 tracking-wide">${award.title}</h3>
                         <p class="text-white font-poppins text-sm leading-relaxed">${award.event}</p>
                     </div>
                 </div>

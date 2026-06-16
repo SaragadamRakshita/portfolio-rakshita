@@ -51,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             const projectsHTML = projects.map(project => {
                 const tagsHTML = project.tags.map(tag =>
-                    `<span class="bg-[#E06031]/90 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">${tag}</span>`
+                    `<span class="bg-[#F43F5E]/90 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">${tag}</span>`
                 ).join('');
 
                 return `
-                <div class="group bg-[#252525] rounded-xl overflow-hidden border border-[#333] hover:border-[#E06031]/50 transform hover:-translate-y-2 transition-all duration-300 flex flex-col h-full">
+                <div class="group glow-card rounded-xl overflow-hidden flex flex-col h-full">
                     <div class="relative overflow-hidden aspect-video">
-                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-500" onerror="this.src='image/project/ui.png'">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-500" onerror="this.src='image/project/ui.png'" decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent opacity-40"></div>
                         <div class="absolute top-3 right-3 flex flex-wrap gap-1 max-w-[85%] justify-end">
                             ${tagsHTML}
@@ -65,16 +65,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     
                     <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-[#E06031] text-xs font-semibold uppercase tracking-wider mb-1">${project.subtitle}</span>
-                        <h3 class="text-white font-poppins font-bold text-xl mb-3 group-hover:text-[#E06031] transition-colors">${project.title}</h3>
+                        <span class="text-[#F43F5E] text-xs font-semibold uppercase tracking-wider mb-1">${project.subtitle}</span>
+                        <h3 class="text-white font-poppins font-bold text-xl mb-3 group-hover:text-[#F43F5E] transition-colors">${project.title}</h3>
                         <p class="text-gray-400 font-poppins text-xs leading-relaxed mb-6 flex-grow">${project.description}</p>
                         
                         <div class="flex justify-between items-center pt-4 border-t border-[#333] mt-auto">
                             <div class="flex space-x-4">
-                                <a href="${project.github}" target="_blank" class="text-gray-400 hover:text-[#E06031] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
+                                <a href="${project.github}" target="_blank" class="text-gray-400 hover:text-[#F43F5E] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
                                     <i class="fab fa-github text-sm"></i> Codebase
                                 </a>
-                                <a href="${project.demo}" class="text-gray-400 hover:text-[#E06031] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
+                                <a href="${project.demo}" class="text-gray-400 hover:text-[#F43F5E] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
                                     <i class="fas fa-external-link-alt text-sm"></i> Demo
                                 </a>
                             </div>

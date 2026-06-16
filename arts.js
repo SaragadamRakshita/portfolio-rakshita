@@ -37,12 +37,7 @@ const arts = [
         alt: "UI Design",
         category: "UI/UX DESIGN"
     },
-    {
-        id: 7,
-        image: "image/art/art7.jpg",
-        alt: "Illustration Art",
-        category: "ILLUSTRATION"
-    },
+
     {
         id: 8,
         image: "image/art/art8.jpg",
@@ -83,6 +78,8 @@ style.textContent = `
         display: flex;
         width: max-content;
         animation: scroll 40s linear infinite;
+        will-change: transform;
+        backface-visibility: hidden;
     }
 
     .art-track:hover {
@@ -98,14 +95,15 @@ style.textContent = `
         width: 100%;
         height: 100%;
         object-fit: cover;
+        backface-visibility: hidden;
     }
 
     @keyframes scroll {
         0% {
-            transform: translateX(0);
+            transform: translate3d(0, 0, 0);
         }
         100% {
-            transform: translateX(-50%);
+            transform: translate3d(-50%, 0, 0);
         }
     }
 `;
@@ -123,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="art-track">
                     ${doubledArts.map(art => `
                         <div class="art-item">
-                            <img src="${art.image}" alt="${art.alt}">
+                            <img src="${art.image}" alt="${art.alt}" decoding="async" loading="lazy">
                         </div>
                     `).join('')}
                 </div>
