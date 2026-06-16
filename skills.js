@@ -102,8 +102,8 @@ function renderSkillsSection(container) {
                     data-filter="${f.id}" 
                     class="px-5 py-2 rounded-full border text-sm font-researcher tracking-wide transition-all duration-300 ${
                         i === 0 
-                        ? 'bg-[#F43F5E] border-[#F43F5E] text-white shadow-lg shadow-[#F43F5E]/20' 
-                        : 'border-[#333] bg-[#252525]/30 text-gray-400 hover:text-white hover:border-[#F43F5E]'
+                        ? 'bg-[#8F55FF] border-[#8F55FF] text-white shadow-lg shadow-[#8F55FF]/20' 
+                        : 'border-[#333] bg-[#252525]/30 text-gray-400 hover:text-white hover:border-[#8F55FF]'
                     }"
                 >
                     ${f.name}
@@ -120,11 +120,11 @@ function renderSkillsSection(container) {
                     <div class="space-y-2">
                         <div class="flex justify-between text-xs font-semibold">
                             <span class="text-gray-300 font-poppins">${skill.name}</span>
-                            <span class="text-[#F43F5E] font-mono">${skill.level}%</span>
+                            <span class="text-[#8F55FF] font-mono">${skill.level}%</span>
                         </div>
                         <div class="w-full bg-[#111] rounded-full h-2 overflow-hidden border border-white/5">
                             <div 
-                                class="bg-gradient-to-r from-[#F43F5E] to-[#BE123C] h-full rounded-full skill-progress-fill shadow-[0_0_8px_rgba(244, 63, 94,0.5)]" 
+                                class="bg-gradient-to-r from-[#8F55FF] to-[#6366F1] h-full rounded-full skill-progress-fill shadow-[0_0_8px_rgba(143, 85, 255,0.5)]" 
                                 style="--progress: ${skill.level}%"
                             ></div>
                         </div>
@@ -140,14 +140,14 @@ function renderSkillsSection(container) {
                             <!-- Header -->
                             <div class="flex justify-between items-center mb-6">
                                 <div class="flex items-center gap-3">
-                                    <div class="p-3 bg-[#F43F5E]/10 rounded-xl text-[#F43F5E] shadow-[inset_0_0_12px_rgba(244, 63, 94,0.1)]">
+                                    <div class="p-3 bg-[#8F55FF]/10 rounded-xl text-[#8F55FF] shadow-[inset_0_0_12px_rgba(143, 85, 255,0.1)]">
                                         <i class="${category.icon} text-xl"></i>
                                     </div>
                                     <h3 class="text-white font-researcher text-lg tracking-wide font-bold">${category.title}</h3>
                                 </div>
                                 <span class="relative flex h-2 w-2">
-                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F43F5E] opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#F43F5E]"></span>
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8F55FF] opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#8F55FF]"></span>
                                 </span>
                             </div>
                             
@@ -173,11 +173,11 @@ function renderSkillsSection(container) {
         btn.addEventListener('click', function() {
             // Remove active classes from all buttons
             filterButtons.forEach(b => {
-                b.className = 'px-5 py-2 rounded-full border text-sm font-researcher tracking-wide transition-all duration-300 border-[#333] bg-[#252525]/30 text-gray-400 hover:text-white hover:border-[#F43F5E]';
+                b.className = 'px-5 py-2 rounded-full border text-sm font-researcher tracking-wide transition-all duration-300 border-[#333] bg-[#252525]/30 text-gray-400 hover:text-white hover:border-[#8F55FF]';
             });
 
             // Set active class on clicked button
-            this.className = 'px-5 py-2 rounded-full border text-sm font-researcher tracking-wide transition-all duration-300 bg-[#F43F5E] border-[#F43F5E] text-white shadow-lg shadow-[#F43F5E]/20';
+            this.className = 'px-5 py-2 rounded-full border text-sm font-researcher tracking-wide transition-all duration-300 bg-[#8F55FF] border-[#8F55FF] text-white shadow-lg shadow-[#8F55FF]/20';
 
             const filterValue = this.getAttribute('data-filter');
 

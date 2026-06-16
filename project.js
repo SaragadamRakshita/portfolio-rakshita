@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             const projectsHTML = projects.map(project => {
                 const tagsHTML = project.tags.map(tag =>
-                    `<span class="bg-[#F43F5E]/90 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">${tag}</span>`
+                    `<span class="bg-[#8F55FF]/90 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">${tag}</span>`
                 ).join('');
 
                 return `
@@ -65,16 +65,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     
                     <div class="p-6 flex flex-col flex-grow">
-                        <span class="text-[#F43F5E] text-xs font-semibold uppercase tracking-wider mb-1">${project.subtitle}</span>
-                        <h3 class="text-white font-poppins font-bold text-xl mb-3 group-hover:text-[#F43F5E] transition-colors">${project.title}</h3>
+                        <span class="text-[#8F55FF] text-xs font-semibold uppercase tracking-wider mb-1">${project.subtitle}</span>
+                        <h3 class="text-white font-poppins font-bold text-xl mb-3 group-hover:text-[#8F55FF] transition-colors">${project.title}</h3>
                         <p class="text-gray-400 font-poppins text-xs leading-relaxed mb-6 flex-grow">${project.description}</p>
                         
                         <div class="flex justify-between items-center pt-4 border-t border-[#333] mt-auto">
                             <div class="flex space-x-4">
-                                <a href="${project.github}" target="_blank" class="text-gray-400 hover:text-[#F43F5E] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
+                                <a href="${project.github}" target="_blank" class="text-gray-400 hover:text-[#8F55FF] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
                                     <i class="fab fa-github text-sm"></i> Codebase
                                 </a>
-                                <a href="${project.demo}" class="text-gray-400 hover:text-[#F43F5E] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
+                                <a href="${project.demo}" class="text-gray-400 hover:text-[#8F55FF] transition-colors duration-300 flex items-center text-xs gap-1 font-medium">
                                     <i class="fas fa-external-link-alt text-sm"></i> Demo
                                 </a>
                             </div>

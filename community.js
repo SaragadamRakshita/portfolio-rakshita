@@ -51,7 +51,7 @@ function loadCommunityItems() {
             </div>
             <div class="p-6 flex flex-col flex-grow justify-between">
                 <div>
-                    <span class="text-[#F43F5E] font-poppins text-xs font-semibold uppercase tracking-wider">${item.date}</span>
+                    <span class="text-[#8F55FF] font-poppins text-xs font-semibold uppercase tracking-wider">${item.date}</span>
                     <h3 class="text-white font-bold text-lg mt-2 mb-1 font-poppins line-clamp-1">${item.title}</h3>
                     <h4 class="text-gray-300 text-sm font-semibold">${item.event}</h4>
                 </div>

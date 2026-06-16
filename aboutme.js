@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start font-poppins">
                 <!-- Column 1: Profile, Bio, & Quick Info -->
                 <div class="space-y-6">
-                    <div class="relative group overflow-hidden rounded-2xl border border-[#F43F5E]/20 shadow-lg bg-[#252525]/30 p-4">
+                    <div class="relative group overflow-hidden rounded-2xl border border-[#8F55FF]/20 shadow-lg bg-[#252525]/30 p-4">
                         <img src="image/profile.png" alt="Saragadam Rakshita" class="w-full h-auto object-cover rounded-xl transition duration-500 group-hover:scale-105" onerror="this.src='image/profile.jpg'">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-transparent opacity-60"></div>
                     </div>
                     
                     <div class="glow-card p-6 rounded-2xl">
-                        <h3 class="text-[#F43F5E] text-xl font-bold font-researcher tracking-wide mb-4 flex items-center">
+                        <h3 class="text-[#8F55FF] text-xl font-bold font-researcher tracking-wide mb-4 flex items-center">
                             <i class="fas fa-user-circle mr-2"></i> Bio
                         </h3>
                         <p class="text-gray-300 text-sm leading-relaxed mb-6">
@@ -77,21 +77,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 <!-- Column 2: Education & Path -->
                 <div class="space-y-6">
                     <div class="glow-card p-6 rounded-2xl">
-                        <h3 class="text-[#F43F5E] text-xl font-bold font-researcher tracking-wide mb-6 flex items-center">
+                        <h3 class="text-[#8F55FF] text-xl font-bold font-researcher tracking-wide mb-6 flex items-center">
                             <i class="fas fa-graduation-cap mr-2"></i> Education
                         </h3>
                         
-                        <div class="relative border-l-2 border-[#F43F5E]/30 pl-6 space-y-8 ml-2">
+                        <div class="relative border-l-2 border-[#8F55FF]/30 pl-6 space-y-8 ml-2">
                             ${education.map(edu => `
                                 <div class="relative">
                                     <!-- Timeline Dot -->
-                                    <div class="absolute -left-[31px] top-1 bg-[#1A1A1A] border-2 border-[#F43F5E] rounded-full w-4 h-4"></div>
+                                    <div class="absolute -left-[31px] top-1 bg-[#1A1A1A] border-2 border-[#8F55FF] rounded-full w-4 h-4"></div>
                                     
-                                    <span class="text-xs text-[#F43F5E] font-semibold tracking-wider">${edu.period}</span>
+                                    <span class="text-xs text-[#8F55FF] font-semibold tracking-wider">${edu.period}</span>
                                     <h4 class="text-white font-bold text-base mt-1">${edu.institution}</h4>
                                     <p class="text-gray-300 text-xs mt-1 font-medium">${edu.degree}</p>
                                     <p class="text-gray-500 text-xs mt-0.5">${edu.location}</p>
-                                    <div class="mt-2 inline-block bg-[#F43F5E]/10 text-[#F43F5E] text-[11px] font-bold px-2 py-0.5 rounded border border-[#F43F5E]/20">
+                                    <div class="mt-2 inline-block bg-[#8F55FF]/10 text-[#8F55FF] text-[11px] font-bold px-2 py-0.5 rounded border border-[#8F55FF]/20">
                                         CGPA / GPA: ${edu.gpa}
                                     </div>
                                 </div>

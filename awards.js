@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="absolute inset-0 bg-gradient-to-t from-[#252525] to-transparent opacity-20"></div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-[#F43F5E] font-poppins font-bold text-lg mb-2 tracking-wide">${award.title}</h3>
+                        <h3 class="text-[#8F55FF] font-poppins font-bold text-lg mb-2 tracking-wide">${award.title}</h3>
                         <p class="text-white font-poppins text-sm leading-relaxed">${award.event}</p>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: thin;
-    scrollbar-color: #F43F5E #1A1A1A;
+    scrollbar-color: #8F55FF #1A1A1A;
 }
 
 /* Optimize animations */
@@ -57,12 +57,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #F43F5E;
+    background: #8F55FF;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #9F1239;
+    background: #793BEC;
 }
 
 .nav {
@@ -89,7 +89,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #F43F5E;
+    color: #8F55FF;
 }
 
 .profile-img {
@@ -104,7 +104,7 @@ body {
 }
 
 .text-gradient {
-    background: linear-gradient(45deg, #F43F5E, #BE123C);
+    background: linear-gradient(45deg, #8F55FF, #6366F1);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -218,21 +218,21 @@ p {
 .ambient-glow-1 {
     top: 5%;
     left: -15%;
-    background: radial-gradient(circle, rgba(244, 63, 94, 0.08) 0%, rgba(244, 63, 94, 0) 70%);
+    background: radial-gradient(circle, rgba(143, 85, 255, 0.08) 0%, rgba(143, 85, 255, 0) 70%);
     animation: float-glow-slow 25s ease-in-out infinite alternate;
 }
 
 .ambient-glow-2 {
     top: 45%;
     right: -15%;
-    background: radial-gradient(circle, rgba(190, 18, 60, 0.06) 0%, rgba(190, 18, 60, 0) 70%);
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, rgba(99, 102, 241, 0) 70%);
     animation: float-glow-reverse 30s ease-in-out infinite alternate;
 }
 
 .ambient-glow-3 {
     bottom: 5%;
     left: 10%;
-    background: radial-gradient(circle, rgba(244, 63, 94, 0.05) 0%, rgba(244, 63, 94, 0) 70%);
+    background: radial-gradient(circle, rgba(143, 85, 255, 0.05) 0%, rgba(143, 85, 255, 0) 70%);
     animation: float-glow-slow 35s ease-in-out infinite alternate;
 }
 
@@ -275,8 +275,8 @@ p {
 }
 
 .glow-card:hover {
-    border-color: rgba(244, 63, 94, 0.25);
-    box-shadow: 0 0 16px rgba(244, 63, 94, 0.12), 
+    border-color: rgba(143, 85, 255, 0.25);
+    box-shadow: 0 0 16px rgba(143, 85, 255, 0.12), 
                 0 8px 24px rgba(0, 0, 0, 0.25);
     transform: translate3d(0, -6px, 0) scale(1.015);
 }
