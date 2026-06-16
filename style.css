@@ -201,14 +201,13 @@ p {
     }
 }
 
-/* Ambient background glow elements (Subtle & Soft) */
+/* Ambient background glow elements (Subtle, Soft & High-Performance) */
 .ambient-glow {
     position: absolute;
     width: 420px;
     height: 420px;
     border-radius: 50%;
     pointer-events: none;
-    mix-blend-mode: plus-lighter;
     filter: blur(100px);
     z-index: -1;
     will-change: transform;
@@ -260,24 +259,22 @@ p {
     }
 }
 
-/* Glassmorphism & Soft Neon Glow cards */
+/* Glassmorphism & Soft Neon Glow cards (High-Performance GPU Rendering) */
 .glow-card {
-    background: rgba(37, 37, 37, 0.35);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(30, 30, 34, 0.93);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     /* Spring-like overshoot transitions */
     transition: border-color 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
                 box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
                 transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-    will-change: transform, box-shadow, border-color;
+    will-change: transform, opacity;
 }
 
 .glow-card:hover {
-    border-color: rgba(143, 85, 255, 0.25);
-    box-shadow: 0 0 16px rgba(143, 85, 255, 0.12), 
-                0 8px 24px rgba(0, 0, 0, 0.25);
+    border-color: rgba(143, 85, 255, 0.22);
+    box-shadow: 0 0 16px rgba(143, 85, 255, 0.08), 
+                0 8px 24px rgba(0, 0, 0, 0.2);
     transform: translate3d(0, -6px, 0) scale(1.015);
 }
 
@@ -415,21 +412,20 @@ p {
 /* Playful Side-Jump Leaning Hover transitions (Alternating Left & Right tilts) */
 .reveal-on-scroll.revealed .glow-card:nth-child(odd):hover {
     transform: translate3d(-3px, -8px, 0) rotate(-1.5deg) scale(1.02);
-    border-color: rgba(143, 85, 255, 0.25);
-    box-shadow: 0 0 16px rgba(143, 85, 255, 0.12), 0 8px 24px rgba(0, 0, 0, 0.25);
+    border-color: rgba(143, 85, 255, 0.22);
+    box-shadow: 0 0 16px rgba(143, 85, 255, 0.08), 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .reveal-on-scroll.revealed .glow-card:nth-child(even):hover {
     transform: translate3d(3px, -8px, 0) rotate(1.5deg) scale(1.02);
-    border-color: rgba(99, 102, 241, 0.25);
-    box-shadow: 0 0 16px rgba(99, 102, 241, 0.12), 0 8px 24px rgba(0, 0, 0, 0.25);
+    border-color: rgba(99, 102, 241, 0.22);
+    box-shadow: 0 0 16px rgba(99, 102, 241, 0.08), 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Custom Skill Progress Bars animations */
 .skill-progress-fill {
     width: 0%;
     transition: width 1.8s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: width;
 }
 
 .revealed .skill-progress-fill {
