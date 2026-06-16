@@ -117,7 +117,7 @@ function renderSkillsSection(container) {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="skills-grid">
             ${skillsCategories.map(category => {
                 const categorySkillsHTML = category.skills.map(skill => `
-                    <div class="space-y-2">
+                    <div class="space-y-2 skill-item cursor-pointer">
                         <div class="flex justify-between text-xs font-semibold">
                             <span class="text-gray-300 font-poppins">${skill.name}</span>
                             <span class="text-[#8F55FF] font-mono">${skill.level}%</span>
